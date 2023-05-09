@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="col-md-6">
+        <div class="card">
+            <h5>Update Contact</h5>
+            <div class="row">
+                <form >
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">First Name</label>
+                      <input type="text" class="form-control mt-3" id="firstname" [(ngModel)]="contactdata.firstname" name="firstname"
+                      aria-describedby="emailHelp" placeholder="Enter First Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Last Name</label>
+                      <input type="text" class="form-control mt-3" id="lastname" placeholder="Last Name" [(ngModel)]="contactdata.lastname" name="lastname">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Phone Number</label>
+                        <input type="text" class="form-control mt-3" id="number" placeholder="Phone Number" [(ngModel)]="contactdata.phone" name="phone">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">City</label>
+                        <input type="text" class="form-control mt-3" id="city" placeholder="City" [(ngModel)]="contactdata.city" name="city">
+                      </div>
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-primary mt-3 mx-5" (click)="update()">Update</button>
+                        <button type="click" class="btn btn-danger mt-3 mx-5" routerLink="/contactlist">Back</button>
+                      </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>

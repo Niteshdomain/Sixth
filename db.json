@@ -1,0 +1,55 @@
+{
+  "posts": [
+    {
+      "firstname": "nitesh",
+      "lastname": "dubey",
+      "phone": "1",
+      "city": "a",
+      "id": 1
+    },
+    {
+      "firstname": "v",
+      "lastname": "d",
+      "phone": "3",
+      "city": "c",
+      "id": 3
+    },
+    {
+      "firstname": "ankita",
+      "lastname": "junjhar",
+      "phone": "4",
+      "city": "d",
+      "id": 4
+    },
+    {
+      "firstname": "arun",
+      "lastname": "singh",
+      "phone": "5",
+      "city": "e",
+      "id": 5
+    }
+  ],
+  "signup": [
+    {
+      "name": "a",
+      "email": "b",
+      "password": "c",
+      "id": 1
+    },
+    {
+      "name": "nitesh",
+      "email": "aa@gmail.com",
+      "password": "Rishabh",
+      "id": 2
+    },
+    {
+      "name": "niteshdubey",
+      "email": "a@gmail.com",
+      "password": "abcd",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

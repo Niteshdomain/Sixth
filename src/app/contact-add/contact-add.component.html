@@ -1,0 +1,31 @@
+<div class="container-fluid">
+        <div class="col-md-6">
+            <div class="card">
+                <h5>Add</h5>
+                <div class="row">
+                    <form [formGroup]="contactform">
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">First Name</label>
+                          <input type="text" class="form-control mt-3" id="firstname" formControlName="firstname" aria-describedby="emailHelp" placeholder="Enter First Name">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Last Name</label>
+                          <input type="text" class="form-control mt-3" id="lastname" placeholder="Last Name" formControlName="lastname">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Phone Number</label>
+                            <input type="text" class="form-control mt-3" id="number" placeholder="Phone Number"formControlName="phone">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">City</label>
+                            <input type="text" class="form-control mt-3" id="city" placeholder="City" formControlName="city">
+                          </div>
+                          <div class="text-center">
+                            <button type="submit" (click)="submit(this.contactform.value)"class="btn btn-primary mt-3 mx-5"[disabled]="this.contactform.invalid">Submit</button>
+                            <button type="click" class="btn btn-danger mt-3 mx-5" routerLink="/contactlist">Back</button>
+                          </div>
+                      </form>
+                </div>
+            </div>
+        </div>
+    </div>
